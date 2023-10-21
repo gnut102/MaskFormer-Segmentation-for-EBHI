@@ -28,7 +28,7 @@ data,df = read_data("/kaggle/input/d/maitng/ebhi-seg/EBHI-SEG")
 ```
 
 ### Dataset
-- Add more [albumentation](https://github.com/albumentations-team/albumentations#spatial-level-transforms) for `train_dataset` in this module
+Add more [albumentation](https://github.com/albumentations-team/albumentations#spatial-level-transforms) for `train_dataset` in this module
 ```
 import albumentations as A
 
@@ -44,7 +44,7 @@ train_transform = A.Compose([
 ```
 
 ### Dataloader
- - Change `batch_size` to match with your GPU, in here I chose `batch_size=12` for GPU NVIDIA P100
+Change `batch_size` to match with your GPU, in here I chose `batch_size=12` for GPU NVIDIA P100
 ```
 #change batch_size 
 train_dataloader = DataLoader(train_dataset, batch_size=12, shuffle=True, collate_fn=collate_fn)
@@ -52,7 +52,7 @@ test_dataloader = DataLoader(test_dataset, batch_size=8, shuffle=False, collate_
 ```
 
 ### Training model 
-- Install MaskFormer pretrained model
+Install MaskFormer pretrained model
 ```
 from transformers import MaskFormerForInstanceSegmentation
 
@@ -61,17 +61,17 @@ model = MaskFormerForInstanceSegmentation.from_pretrained("facebook/maskformer-s
                                                           id2label=id2label,
                                                           ignore_mismatched_sizes=True)
 ```
-- You can change another optimizer from [torch.optim](https://pytorch.org/docs/stable/optim.html)
+You can change another optimizer from [torch.optim](https://pytorch.org/docs/stable/optim.html)
 ```
 optimizer = torch.optim.Adam(model.parameters(), lr=5e-5)
 ```
-- I choose `epochs=20`, you can easily edit it
+I choose `epochs=20`, you can easily edit it
 ```
 #change epochs in here
 epochs = 20
 ```
 ### Visualize 
-- After training model, you can show how model predict tumor, change `idx` to see output
+After training model, you can show how model predict tumor, change `idx` to see output
 ```
 idx = 3
 image = batch["original_images"][idx]
