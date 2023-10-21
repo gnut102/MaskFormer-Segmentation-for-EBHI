@@ -71,7 +71,7 @@ I choose `epochs=20`, you can easily edit it
 epochs = 20
 ```
 ### Visualize 
-After training model, you can show how model predict tumor, change `idx` to see output
+After training the model, you can observe how the model predicts tumors. You can change the 'idx' to view different outputs
 ```
 idx = 3
 image = batch["original_images"][idx]
