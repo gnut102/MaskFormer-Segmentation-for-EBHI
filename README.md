@@ -1,7 +1,7 @@
 # MaskFormer-Segmentation for EBHI-seg dataset
 
 ## Introduction
-This project is about MaskFormer segmentation for EHBI-seg dataset, which detect area of six stage tumor colorectal cancer differentiation
+This project is about MaskFormer segmentation for the EHBI-seg dataset, which detects areas of six-stage tumor colorectal cancer differentiation
 
 Colorectal cancer which is a common fatal malignancy, the fourth most common cancer in men, and the third most common cancer in women worldwide. The EBHI-Seg dataset contains 5,710 electron microscopic images of histopathological colorectal cancer sections that encompass six tumor differentiation stages: normal, polyp, low-grade intraepithelial neoplasia, high-grade intraepithelial neoplasia, serrated adenoma, and adenocarcinoma. 
 Read more about EHBI-seg datasheet in [here](https://arxiv.org/pdf/2212.00532v3.pdf)
