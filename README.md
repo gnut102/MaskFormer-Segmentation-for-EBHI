@@ -70,3 +70,10 @@ optimizer = torch.optim.Adam(model.parameters(), lr=5e-5)
 #change epochs in here
 epochs = 20
 ```
+### Visualize 
+- After training model, you can show how model predict tumor, change `idx` to see output
+```
+idx = 3
+image = batch["original_images"][idx]
+Image.fromarray(image)
+```
