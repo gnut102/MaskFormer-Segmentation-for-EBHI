@@ -76,4 +76,5 @@ After training the model, you can observe how the model predicts tumors. You can
 idx = 3
 image = batch["original_images"][idx]
 Image.fromarray(image)
+
 ```
