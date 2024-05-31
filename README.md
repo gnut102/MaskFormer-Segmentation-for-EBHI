@@ -6,7 +6,7 @@ This project is about MaskFormer segmentation for the EHBI-seg dataset, which de
 Colorectal cancer which is a common fatal malignancy, the fourth most common cancer in men, and the third most common cancer in women worldwide. The EBHI-Seg dataset contains 5,710 electron microscopic images of histopathological colorectal cancer sections that encompass six tumor differentiation stages: normal, polyp, low-grade intraepithelial neoplasia, high-grade intraepithelial neoplasia, serrated adenoma, and adenocarcinoma. 
 Read more about EHBI-seg datasheet in [here](https://arxiv.org/pdf/2212.00532v3.pdf)
 
-In this project I using MaskFormer model for semantic segmentation, read more about model: [paper](https://arxiv.org/pdf/2107.06278.pdf) and [code](https://github.com/facebookresearch/MaskFormer) 
+In this project I using MaskFormer model for semantic segmentation, [Kaggle Version](https://www.kaggle.com/code/maitng/ebhi-segmentation), read more about model: [paper](https://arxiv.org/pdf/2107.06278.pdf) and [code](https://github.com/facebookresearch/MaskFormer) 
 
 ## Getting started
 
